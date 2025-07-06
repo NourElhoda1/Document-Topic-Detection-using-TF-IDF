@@ -2,8 +2,8 @@
 
 This project is a lightweight **Flask-based web application** that analyzes `.txt` or `.pdf` documents and detects their **dominant topics**, using two different Natural Language Processing (NLP) techniques:
 
-- **TF-IDF (Term Frequency - Inverse Document Frequency)** 🧮  
-- **LSA (Latent Semantic Analysis)** 📊
+- **TF-IDF (Term Frequency - Inverse Document Frequency)** 
+- **LSA (Latent Semantic Analysis)** 
 
 ---
 
