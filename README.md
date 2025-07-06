@@ -1,5 +1,4 @@
-# Document-Topic-Detection-using-TF-IDF-&-LSA
-# 🧠 Automatic Topic Detection in Documents (.txt/.pdf)
+# Document Topic Detection using TF-IDF & LSA
 
 This project is a lightweight **Flask-based web application** that analyzes `.txt` or `.pdf` documents and detects their **dominant topics**, using two different Natural Language Processing (NLP) techniques:
 
@@ -8,7 +7,7 @@ This project is a lightweight **Flask-based web application** that analyzes `.tx
 
 ---
 
-## 📌 Objectives
+##  Objectives
 
 - Provide users with a simple interface to upload text or PDF files.
 - Automatically identify the main **topics** within the document.
@@ -16,18 +15,18 @@ This project is a lightweight **Flask-based web application** that analyzes `.tx
 
 ---
 
-## ⚙️ Features
+##  Features
 
-- ✅ Upload support for `.txt` and `.pdf` files
-- 🧽 Text cleaning and preprocessing
-- 🧠 Topic detection using TF-IDF + keyword dictionary
-- 🔍 Semantic analysis using LSA (Truncated SVD)
-- 🖼 Simple web interface built with Flask
-- 🔁 Toggle between TF-IDF and LSA analysis modes
+-  Upload support for `.txt` and `.pdf` files
+-  Text cleaning and preprocessing
+-  Topic detection using TF-IDF + keyword dictionary
+-  Semantic analysis using LSA (Truncated SVD)
+-  Simple web interface built with Flask
+-  Toggle between TF-IDF and LSA analysis modes
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 index_projet/
@@ -43,7 +42,7 @@ index_projet/
 
 ---
 
-## 🖥 Technologies Used
+##  Technologies Used
 
 | Type         | Tools & Libraries                         |
 |--------------|-------------------------------------------|
@@ -55,7 +54,7 @@ index_projet/
 
 ---
 
-## 🚀 How to Run the App Locally
+##  How to Run the App Locally
 
 1. **Clone the repository**
 ```bash
