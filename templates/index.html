@@ -29,10 +29,19 @@
     </form>
 
     {% if themes %}
-        <h2> Les thèmes Détectés:</h2>
+        <h3>Thèmes détectés par TF-IDF :</h3>
         <ul>
             {% for theme in themes %}
                 <li>{{ theme }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    {% if lsa_topics %}
+        <h3>Thèmes détectés par LSA :</h3>
+        <ul>
+            {% for topic in lsa_topics %}
+               <li>{{ topic }}</li>
             {% endfor %}
         </ul>
     {% endif %}
