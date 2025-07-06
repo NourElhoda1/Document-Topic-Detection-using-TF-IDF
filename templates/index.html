@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Détection des thèmes</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Détection des thèmes</h1>
+
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        <ul class="flashes">
+        {% for category, message in messages %}
+          <li class="{{ category }}">{{ message }}</li>
+        {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+
+    <form method="POST" enctype="multipart/form-data">
+        <label for="document">Entrer le texte:</label><br>
+        <textarea id="document" name="document" rows="4" cols="50">{{ text_content }}</textarea><br><br>  
+
+        <label for="file">Ou télécharger un fichier(txt ou pdf):</label>
+        <input type="file" id="file" name="file"><br><br>
+
+        <button type="submit">Détecter le thème</button>
+    </form>
+
+    {% if themes %}
+        <h2> Les thèmes Détectés:</h2>
+        <ul>
+            {% for theme in themes %}
+                <li>{{ theme }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    
+</body>
+</html>
